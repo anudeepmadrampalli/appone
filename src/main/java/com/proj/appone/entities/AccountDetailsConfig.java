@@ -11,7 +11,7 @@ import java.util.Arrays;
 
 @Configuration
 public class AccountDetailsConfig {
-    private AccountDetailsRepo accountDetailsRepo;
+    private final AccountDetailsRepo accountDetailsRepo;
 
     public AccountDetailsConfig(AccountDetailsRepo accountDetailsRepo){
         this.accountDetailsRepo = accountDetailsRepo;
@@ -35,5 +35,5 @@ public class AccountDetailsConfig {
 
           accountDetailsRepo.saveAll(Arrays.asList(accountDetails1, accountDetails2));
         };
-    };
+    }
 }

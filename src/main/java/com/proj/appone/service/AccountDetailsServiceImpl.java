@@ -9,7 +9,7 @@ import java.util.List;
 @Service
 public class AccountDetailsServiceImpl implements AccountDetailsService{
 
-    private AccountDetailsRepo accountDetailsRepo;
+    private final AccountDetailsRepo accountDetailsRepo;
 
     public AccountDetailsServiceImpl(AccountDetailsRepo accountDetailsRepo){
         this.accountDetailsRepo = accountDetailsRepo;

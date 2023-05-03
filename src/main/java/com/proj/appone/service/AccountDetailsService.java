@@ -8,5 +8,5 @@ public interface AccountDetailsService {
 
     List<AccountDetails> getAllAccounts();
     AccountDetails getAccount(Long accountNumber);
-
+    void createAccounts();
 }
